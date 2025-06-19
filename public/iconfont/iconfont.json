@@ -1,0 +1,212 @@
+{
+  "id": "4705978",
+  "name": "星际AI",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "39116943",
+      "name": "quick",
+      "font_class": "quick",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "13303112",
+      "name": "cuda",
+      "font_class": "cuda",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "22273606",
+      "name": "cpu",
+      "font_class": "cpu",
+      "unicode": "e6e5",
+      "unicode_decimal": 59109
+    },
+    {
+      "icon_id": "663540",
+      "name": "sound",
+      "font_class": "sound",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "36209394",
+      "name": "video",
+      "font_class": "video",
+      "unicode": "e888",
+      "unicode_decimal": 59528
+    },
+    {
+      "icon_id": "6694596",
+      "name": "sound-prompt",
+      "font_class": "sound-prompt",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "33736128",
+      "name": "video-template",
+      "font_class": "video-template",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "42048056",
+      "name": "human",
+      "font_class": "human",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "19418417",
+      "name": "folder",
+      "font_class": "folder",
+      "unicode": "e727",
+      "unicode_decimal": 59175
+    },
+    {
+      "icon_id": "22864099",
+      "name": "global",
+      "font_class": "global",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "10564327",
+      "name": "mic",
+      "font_class": "mic",
+      "unicode": "e713",
+      "unicode_decimal": 59155
+    },
+    {
+      "icon_id": "15154559",
+      "name": "refresh-circle",
+      "font_class": "refresh-circle",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "40115915",
+      "name": "cut",
+      "font_class": "cut",
+      "unicode": "e861",
+      "unicode_decimal": 59489
+    },
+    {
+      "icon_id": "7022185",
+      "name": "seed",
+      "font_class": "seed",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "10564384",
+      "name": "speed",
+      "font_class": "speed",
+      "unicode": "e71c",
+      "unicode_decimal": 59164
+    },
+    {
+      "icon_id": "37987618",
+      "name": "server",
+      "font_class": "server",
+      "unicode": "e6be",
+      "unicode_decimal": 59070
+    },
+    {
+      "icon_id": "40219183",
+      "name": "speaker",
+      "font_class": "speaker",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "924409",
+      "name": "desktop",
+      "font_class": "desktop",
+      "unicode": "e8e9",
+      "unicode_decimal": 59625
+    },
+    {
+      "icon_id": "6537202",
+      "name": "network",
+      "font_class": "network",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "27965361",
+      "name": "sound-generate",
+      "font_class": "sound-generate",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
+      "icon_id": "41390030",
+      "name": "sound-clone",
+      "font_class": "sound-clone",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "27421769",
+      "name": "logo",
+      "font_class": "logo",
+      "unicode": "e7ea",
+      "unicode_decimal": 59370
+    },
+    {
+      "icon_id": "30808030",
+      "name": "avatar",
+      "font_class": "avatar",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "14027553",
+      "name": "empty-box",
+      "font_class": "empty-box",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "7239764",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e732",
+      "unicode_decimal": 59186
+    },
+    {
+      "icon_id": "39287937",
+      "name": "gitee",
+      "font_class": "gitee",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "1115039",
+      "name": "关闭",
+      "font_class": "close",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "1649166",
+      "name": "最小化",
+      "font_class": "min",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
+      "icon_id": "1818719",
+      "name": "最大化",
+      "font_class": "max",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    }
+  ]
+}

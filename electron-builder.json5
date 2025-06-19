@@ -1,0 +1,151 @@
+// @see https://www.electron.build/configuration/configuration
+{
+    "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
+    "appId": "com.xjaigc.app",
+    "asar": true,
+    "npmRebuild": true,
+    "productName": "美搭AI数字人",
+    "copyright": "Copyright © 2025 ${author}",
+    "directories": {
+        "output": "dist-release",
+        "buildResources": "electron/resources/build"
+    },
+    "afterPack": "./scripts/build_optimize.cjs",
+    "files": [
+        "dist",
+        "dist-electron"
+    ],
+    "extraResources": [
+        {
+            "from": "node_modules/ffmpeg-static",
+            "to": "bin/ffmpeg",
+        }
+    ],
+    "win": {
+        icon: "electron/resources/build/logo.ico",
+        "target": [
+            {
+                "target": "nsis",
+                "arch": [
+                    "x64",
+                    "arm64"
+                ]
+            },
+        ],
+        "artifactName": "${productName}-${version}-win-${arch}.${ext}",
+        "extraResources": [
+            {
+                "from": "electron/resources/extra",
+                "to": "extra",
+                "filter": [
+                    "common",
+                    "win"
+                ]
+            }
+        ]
+    },
+    "nsis": {
+        "artifactName": "${productName}-${version}-win-setup-${arch}.${ext}",
+        "shortcutName": "${productName}",
+        "uninstallDisplayName": "${productName}",
+        "oneClick": false,
+        "perMachine": false,
+        "allowToChangeInstallationDirectory": true,
+        "deleteAppDataOnUninstall": false
+    },
+    "portable": {
+        "artifactName": "${productName}-${version}-win-portable-${arch}.${ext}",
+        "requestExecutionLevel": "user"
+    },
+    "appx": {
+        "identityName": "xjaigc",
+        "publisher": "CN=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXX",
+        "publisherDisplayName": "xjaigc",
+        "languages": [
+            "zh-CN",
+            "en-US",
+            "zh-TW"
+        ]
+    },
+    "mac": {
+        "icon": "logo.icns",
+        "target": [
+            {
+                "target": "dmg",
+                "arch": [
+                    "x64",
+                    "arm64"
+                ]
+            }
+        ],
+        "artifactName": "${productName}-${version}-mac-${arch}.${ext}",
+        "extraResources": [
+            {
+                "from": "electron/resources/extra",
+                "to": "extra",
+                "filter": [
+                    "common",
+                    "mac"
+                ]
+            }
+        ],
+        "x64ArchFiles": "Contents/Resources/extra/**/*",
+        "entitlementsInherit": "./entitlements.mac.plist",
+        "entitlements": "./entitlements.mac.plist",
+        "extendInfo": {
+            "NSDocumentsFolderUsageDescription": "Application requests access to the user's Documents folder.",
+            "NSDownloadsFolderUsageDescription": "Application requests access to the user's Downloads folder."
+        },
+        "type": "development",
+        "notarize": false,
+        "darkModeSupport": false,
+        "hardenedRuntime": true,
+        "identity": null,
+        "identityName": "xjaigc",
+        "provisioningProfile": "./scripts/XJAIGC.provisionprofile",
+        "publisherDisplayName": "xjaigc",
+        "gatekeeperAssess": false
+    },
+    "linux": {
+        "icon": "logo.icns",
+        "desktop": "logo",
+        "maintainer": "xjaigc",
+        "category": "Utility",
+        "target": [
+            {
+                "target": "AppImage",
+                "arch": [
+                    "x64",
+                    "arm64"
+                ]
+            },
+            {
+                "target": "deb",
+                "arch": [
+                    "x64",
+                    "arm64"
+                ]
+            }
+        ],
+        "artifactName": "${productName}-${version}-linux-${arch}.${ext}",
+        "extraResources": [
+            {
+                "from": "electron/resources/extra",
+                "to": "extra",
+                "filter": [
+                    "common",
+                    "linux"
+                ]
+            }
+        ]
+    },
+    "afterSign": "./scripts/notarize.cjs",
+    "deb": {
+        "category": "Utility",
+        "maintainer": "xjaigc",
+        "desktop": {
+            "Name": "美搭AI数字人",
+            "Icon": "icon"
+        }
+    }
+}
